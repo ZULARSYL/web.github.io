@@ -102,4 +102,15 @@
   .text-container {
     text-align: justify;
   }
+  #projects .about-containers {
+    gap: 1rem;
+  }
+  #projects .details-container.color-container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1.2rem;
+  }
+  #projects .project-img {
+    height: 160px;
+  }
 }
