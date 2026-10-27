@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="id" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project · Zul Arsyl</title>
+    <meta name="description" content="Studi kasus rekayasa perangkat lunak dan desain produk pilihan oleh Zul Arsyl." />
+    <link rel="icon" type="image/png" href="./assets/core.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700;800;900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-full flex flex-col t-creative-artsy bg-[var(--ca-surface)] text-[var(--ca-ink)] antialiased">
+    <div aria-hidden="true" class="ca-grain pointer-events-none fixed inset-0 z-[1] mix-blend-multiply"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-[var(--ca-surface)]/95 backdrop-blur-sm">
+      <div class="relative flex items-stretch justify-between border-b border-[var(--ca-ink)]/10 pl-4 pr-3 sm:pl-5">
+        <div class="flex items-stretch gap-2">
+          <a aria-label="Zul Arsyl" class="flex items-center pr-2" href="index.html">
+            <svg viewBox="0 0 24 24" class="h-7 w-7 overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))]" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="var(--ca-magenta)" stroke="#ffffff" stroke-width="2.5" paint-order="stroke"></circle>
+              <circle cx="8.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <circle cx="15.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <path d="M8 14Q12 18 16 14" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </a>
+          <nav class="hidden items-stretch md:flex">
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="index.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.85.72-5.1 4.62 1.44 6.7L12 17.6l-6.09 3.7 1.44-6.7-5.1-4.62 6.85-.72z"></path>
+              </svg>
+              Beranda
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="about.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 3a3.6 3.6 0 100 7.2A3.6 3.6 0 0012 3zM4.8 20a7.2 7.2 0 0114.4 0z"></path>
+              </svg>
+              Tentang
+            </a>
+            <a aria-current="page" class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors bg-[var(--ca-yellow)]" href="case-studies.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"></path>
+              </svg>
+              Project
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="playground.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l10 10-10 10L2 12z"></path>
+              </svg>
+              Playground
+            </a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-2 py-2">
+          <a href="https://wa.me/625737662724" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-[var(--ca-ink)] shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-yellow)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.9 11.9 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.07 21.88h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.91 7.02c0 5.48-4.46 9.92-9.89 9.92zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.11 3.23 5.12 4.53.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path></svg>
+          </a>
+          <a href="https://github.com/ZULARSYL" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-white shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-magenta)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+          </a>
+          <a class="ca-mono hidden items-center gap-2.5 border-2 border-[var(--ca-ink)] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-ink)] hover:text-white sm:inline-flex" href="contact.html">
+            <svg viewBox="0 0 24 22" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 21C5 16 1 12 1 7.5 1 4 3.6 1.5 6.8 1.5c2 0 3.9 1 5.2 2.6 1.3-1.6 3.2-2.6 5.2-2.6C20.4 1.5 23 4 23 7.5 23 12 19 16 12 21Z"></path></svg>
+            Kontak
+          </a>
+          <button id="menu-toggle" aria-label="Toggle menu" class="flex h-11 w-11 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] md:hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-5 w-5 text-[var(--ca-ink)]" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-b-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] p-4 md:hidden">
+        <nav class="flex flex-col gap-2">
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="index.html">★ Beranda</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="about.html">☺ Tentang</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 bg-[var(--ca-yellow)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)]" href="case-studies.html">⊞ Project</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="playground.html">◇ Playground</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 border-2 border-[var(--ca-ink)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-ink)] hover:text-white" href="contact.html">♥ Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="ca-grid px-4 pb-24 pt-14 sm:px-8 sm:pt-20 lg:px-20">
+      <div class="mb-16">
+        <p class="ca-hand text-2xl text-[var(--ca-ink)] sm:text-3xl">jelajahi karya saya!</p>
+        <span class="mt-3 inline-block">
+          <span class="ca-display text-7xl leading-[0.92] tracking-tight text-[var(--ca-ink)] sm:text-9xl xl:text-[12rem] block">
+            PROJECT
+          </span>
+        </span>
+      </div>
+
+      <!-- 2-COLUMN SCRAPBOOK FOLDER GRID -->
+      <div class="grid grid-cols-1 gap-x-10 gap-y-20 sm:grid-cols-2">
+        <!-- Project 1: Website PMB -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/website pmb.jpg', 'Website PMB', 'Platform pendaftaran mahasiswa baru dengan proses digital terstruktur.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Aplikasi Web
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/website pmb.jpg" alt="Website PMB" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Website PMB</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Website sistem penerimaan mahasiswa baru yang responsif dan memudahkan proses pendaftaran.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Cinema POS -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/POS cinema.png', 'Cinema POS', 'Aplikasi point of sale untuk bioskop. Live di https://zul-arsyl.my.id/')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Web App
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/POS cinema.png" alt="Cinema POS" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Cinema POS</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Aplikasi point of sale untuk bioskop membantu mengelola bisnis bioskop.
+              </p>
+              <a href="https://zul-arsyl.my.id/" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Kunjungi aplikasi live ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Finance Tracker -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/finance tracker.png', 'Finance Tracker', 'Aplikasi monitoring keuangan pribadi. Live di https://financetracker.khazeo.dev/')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Fintech
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/finance tracker.png" alt="Finance Tracker" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Finance Tracker</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Aplikasi sistem monitor keuangan pribadi untuk mengelola cashflow dan menjaga kesehatan finansial.
+              </p>
+              <a href="https://financetracker.khazeo.dev/" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Kunjungi aplikasi live ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Tumor Otak Detection -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/deteksi tumor.jpg', 'Tumor Otak Detection', 'Deteksi tumor otak dengan model Machine Learning berbasis citra MRI.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Machine Learning
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/deteksi tumor.jpg" alt="Tumor Detection" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Tumor Otak Detection</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Sistem deteksi tumor otak berbasis Machine Learning menggunakan dataset 5.000+ citra MRI Kaggle & Roboflow.
+              </p>
+              <a href="https://github.com/ZULARSYL/Tumor-Otak-Detection.git" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Lihat di GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Fire Detection YOLO -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/fire detection.jpg', 'Fire Detection YOLO', 'Aplikasi deteksi kebakaran real-time menggunakan kamera dan model YOLO.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                YOLO & Computer Vision
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/fire detection.jpg" alt="Fire Detection" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Fire Detection YOLO</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Aplikasi pendeteksi kobaran api dan asap secara real-time via webcam maupun upload foto.
+              </p>
+              <a href="https://github.com/ZULARSYL/fire-detection.git" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Lihat di GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Hand Gesture Recognition -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/hand landmark.jpg', 'Hand Gesture Recognition', 'Deteksi gesture tangan dan landmark secara real-time.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                MediaPipe AI
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/hand landmark.jpg" alt="Hand Gesture" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Hand Gesture AI</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Menampilkan 21 titik koordinat landmark tangan secara real-time untuk mengenali gestur dan pose.
+              </p>
+              <a href="https://github.com/ZULARSYL/hand_landmark.git" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Lihat di GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Company Profile UPK DAPM -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/upk dapm.jpg', 'Company Profile UPK DAPM', 'Platform profil digital resmi UPK DAPM.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Website Profil
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/upk dapm.jpg" alt="UPK DAPM" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Company Profile UPK</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Platform website resmi untuk mempublikasikan profil, program kerja, dan layanan perusahaan UPK DAPM.
+              </p>
+              <a href="https://zularsyl.github.io/upk.github.io/" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Kunjungi website resmi ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Aplikasi DISAPU -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/aplikasi.png', 'Aplikasi DISAPU', 'Aplikasi manajemen sampah digital terintegrasi.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Manajemen Sampah
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/aplikasi.png" alt="Aplikasi DISAPU" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">Aplikasi DISAPU</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Aplikasi manajemen sampah digital yang membantu warga & petugas mengatur jadwal dan rute pengangkutan.
+              </p>
+              <a href="https://disapu.com/" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Kunjungi disapu.com ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: UI/UX E-Commerce Kopiin -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/kopiin.png', 'UI/UX E-Commerce Kopiin', 'Prototipe desain mobile coffee e-commerce.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Desain UI/UX
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/kopiin.png" alt="Kopiin UI/UX" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">UI/UX Kopiin</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Desain prototipe e-commerce kopi yang responsif, fokus pada kemudahan pemesanan dan checkout cepat.
+              </p>
+              <a href="https://figma.com/proto/eqtXx8X670lntsrnt4XGxm/uts?node-id=8-6" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Buka di Figma ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: UI/UX POS Kasir Restoku -->
+        <div>
+          <div class="group block cursor-pointer" onclick="openModal('./assets/project/restoku.jpg', 'UI/UX POS Kasir Restoku', 'Desain sistem point of sale untuk kasir.')">
+            <div class="flex">
+              <span class="ca-mono inline-flex items-center gap-3.5 bg-[var(--ca-chrome)] py-5 pl-9 pr-24 text-sm font-bold uppercase tracking-[0.2em] text-[var(--ca-ink)] transition-colors duration-500 ease-in-out tab-project-01 group-hover:bg-[var(--ca-ink)] group-hover:text-white">
+                <span class="h-3.5 w-3.5 rounded-full bg-[var(--ca-ink)] transition-colors duration-500 ease-in-out group-hover:bg-white"></span>
+                Desain Produk
+              </span>
+            </div>
+            <div class="bg-[var(--ca-chrome)] p-5 transition-colors duration-500 ease-in-out group-hover:bg-[var(--ca-ink)] shadow-[4px_6px_0_var(--ca-ink)]">
+              <div class="relative overflow-hidden aspect-[16/9] w-full">
+                <img src="./assets/project/restoku.jpg" alt="Restoku POS" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h2 class="text-3xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-4xl">UI/UX POS Kasir</h2>
+              <p class="mx-auto mt-2 max-w-md text-base leading-relaxed text-[var(--ca-ink)]/75">
+                Prototipe aplikasi POS kasir resto untuk memproses antrian order, bill splitting, dan laporan penjualan.
+              </p>
+              <a href="https://www.figma.com/proto/8WptajzjrHiTS9FsEMTmEI/POS-Project?node-id=189-5871" target="_blank" class="mt-2 inline-block ca-mono text-xs font-bold uppercase tracking-wider text-[var(--ca-blue)] underline">
+                Buka di Figma ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ca-grid relative mt-auto border-t border-[var(--ca-ink)]/10">
+      <div class="px-4 py-8 sm:px-8 lg:px-20 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span class="ca-display text-2xl text-[var(--ca-ink)] uppercase">Zul Arsyl</span>
+        <span class="text-xs text-[var(--ca-ink)]/70">© 2026 Zul Arsyl · Hak cipta dilindungi</span>
+      </div>
+    </footer>
+
+    <!-- Interactive Modal -->
+    <div id="artsyModal" class="artsy-modal" aria-hidden="true">
+      <div class="artsy-modal-box ca-doodle-box">
+        <button id="artsyModalClose" class="absolute right-4 top-4 ca-mono flex h-10 w-10 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-yellow)] text-xl font-bold hover:bg-[var(--ca-magenta)] hover:text-white" aria-label="Tutup jendela pratinjau">
+          ×
+        </button>
+        <h3 id="artsyModalTitle" class="text-2xl sm:text-3xl font-bold text-[var(--ca-ink)] pr-12">Pratinjau</h3>
+        <p id="artsyModalDesc" class="mt-2 text-sm sm:text-base text-[var(--ca-ink)]/75"></p>
+        <div class="mt-5 overflow-hidden border-2 border-[var(--ca-ink)] bg-black/5 flex items-center justify-center max-h-[65vh]">
+          <img id="artsyModalImg" src="" alt="Modal preview" class="max-h-[65vh] w-auto object-contain" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
