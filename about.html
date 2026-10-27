@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="id" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang · Zul Arsyl</title>
+    <meta name="description" content="Tentang Zul Arsyl - Latar belakang, cerita, prinsip rekayasa perangkat lunak, dan pengalaman kerja." />
+    <link rel="icon" type="image/png" href="./assets/core.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700;800;900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-full flex flex-col t-creative-artsy bg-[var(--ca-surface)] text-[var(--ca-ink)] antialiased">
+    <div aria-hidden="true" class="ca-grain pointer-events-none fixed inset-0 z-[1] mix-blend-multiply"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-[var(--ca-surface)]/95 backdrop-blur-sm">
+      <div class="relative flex items-stretch justify-between border-b border-[var(--ca-ink)]/10 pl-4 pr-3 sm:pl-5">
+        <div class="flex items-stretch gap-2">
+          <a aria-label="Zul Arsyl" class="flex items-center pr-2" href="index.html">
+            <svg viewBox="0 0 24 24" class="h-7 w-7 overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))]" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="var(--ca-magenta)" stroke="#ffffff" stroke-width="2.5" paint-order="stroke"></circle>
+              <circle cx="8.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <circle cx="15.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <path d="M8 14Q12 18 16 14" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </a>
+          <nav class="hidden items-stretch md:flex">
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="index.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.85.72-5.1 4.62 1.44 6.7L12 17.6l-6.09 3.7 1.44-6.7-5.1-4.62 6.85-.72z"></path>
+              </svg>
+              Beranda
+            </a>
+            <a aria-current="page" class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors bg-[var(--ca-yellow)]" href="about.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 3a3.6 3.6 0 100 7.2A3.6 3.6 0 0012 3zM4.8 20a7.2 7.2 0 0114.4 0z"></path>
+              </svg>
+              Tentang
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="case-studies.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"></path>
+              </svg>
+              Studi Kasus
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="playground.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l10 10-10 10L2 12z"></path>
+              </svg>
+              Playground
+            </a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-2 py-2">
+          <a href="https://wa.me/625737662724" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-[var(--ca-ink)] shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-yellow)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.9 11.9 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.07 21.88h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.91 7.02c0 5.48-4.46 9.92-9.89 9.92zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.11 3.23 5.12 4.53.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path></svg>
+          </a>
+          <a href="https://github.com/ZULARSYL" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-white shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-magenta)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+          </a>
+          <a class="ca-mono hidden items-center gap-2.5 border-2 border-[var(--ca-ink)] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-ink)] hover:text-white sm:inline-flex" href="contact.html">
+            <svg viewBox="0 0 24 22" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 21C5 16 1 12 1 7.5 1 4 3.6 1.5 6.8 1.5c2 0 3.9 1 5.2 2.6 1.3-1.6 3.2-2.6 5.2-2.6C20.4 1.5 23 4 23 7.5 23 12 19 16 12 21Z"></path></svg>
+            Kontak
+          </a>
+          <button id="menu-toggle" aria-label="Toggle menu" class="flex h-11 w-11 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] md:hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-5 w-5 text-[var(--ca-ink)]" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-b-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] p-4 md:hidden">
+        <nav class="flex flex-col gap-2">
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="index.html">★ Beranda</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 bg-[var(--ca-yellow)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)]" href="about.html">☺ Tentang</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="case-studies.html">⊞ Studi Kasus</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="playground.html">◇ Playground</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 border-2 border-[var(--ca-ink)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-ink)] hover:text-white" href="contact.html">♥ Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="ca-grid relative px-4 pb-24 pt-10 sm:pt-14">
+      <!-- Fixed Left Navigation Tabs (Desktop) -->
+      <nav class="fixed left-0 top-1/3 z-40 hidden flex-col gap-3 lg:flex" aria-label="Bagian tentang saya">
+        <a
+          href="#bio"
+          class="ca-mono flex items-center gap-2 rounded-r-xl border-2 border-l-0 border-[var(--ca-ink)] py-3 pl-3 pr-5 text-[11px] font-bold uppercase tracking-widest shadow-[3px_3px_0_var(--ca-ink)] transition-transform duration-200 hover:translate-x-1 text-[var(--ca-ink)]"
+          style="background-color:var(--ca-yellow)"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <circle cx="12" cy="12" r="3.5" fill="white"></circle>
+          </svg>
+          Bio Utama
+        </a>
+        <a
+          href="#story"
+          class="ca-mono flex items-center gap-2 rounded-r-xl border-2 border-l-0 border-[var(--ca-ink)] py-3 pl-3 pr-5 text-[11px] font-bold uppercase tracking-widest shadow-[3px_3px_0_var(--ca-ink)] transition-transform duration-200 hover:translate-x-1 text-[var(--ca-ink)]"
+          style="background-color:var(--ca-magenta)"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true">
+            <path d="M12 2l10 10-10 10L2 12z"></path>
+          </svg>
+          Prinsip Kerja
+        </a>
+        <a
+          href="#work"
+          class="ca-mono flex items-center gap-2 rounded-r-xl border-2 border-l-0 border-[var(--ca-ink)] py-3 pl-3 pr-5 text-[11px] font-bold uppercase tracking-widest shadow-[3px_3px_0_var(--ca-ink)] transition-transform duration-200 hover:translate-x-1 text-white"
+          style="background-color:var(--ca-blue)"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5" aria-hidden="true">
+            <path d="M12 2 15 9l7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"></path>
+          </svg>
+          Pengalaman & Edukasi
+        </a>
+      </nav>
+
+      <div class="mx-auto max-w-4xl">
+        <!-- Giant ABOUT Title -->
+        <span class="mt-4 inline-block">
+          <span class="ca-display text-7xl leading-[0.9] tracking-tight text-[var(--ca-ink)] sm:text-9xl xl:text-[12rem] block">
+            TENTANG
+          </span>
+        </span>
+
+        <!-- Mobile Section Jump Buttons -->
+        <div class="mt-6 flex gap-2 lg:hidden">
+          <a href="#bio" class="ca-mono flex items-center gap-1.5 rounded-full bg-[var(--ca-yellow)] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-widest text-[var(--ca-ink)]">
+            Bio Utama
+          </a>
+          <a href="#story" class="ca-mono flex items-center gap-1.5 rounded-full bg-[var(--ca-magenta)] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white">
+            Prinsip Kerja
+          </a>
+          <a href="#work" class="ca-mono flex items-center gap-1.5 rounded-full bg-[var(--ca-blue)] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white">
+            Pengalaman & Edukasi
+          </a>
+        </div>
+
+        <!-- SECTION 1: BIO -->
+        <section id="bio" class="mt-14 scroll-mt-28 sm:mt-20">
+          <span
+            class="ca-mono -rotate-2 inline-block bg-[var(--ca-yellow)] px-4 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] [filter:drop-shadow(2px_3px_3px_rgba(17,18,18,0.18))] sm:text-base clip-stamp-1"
+          >
+            Bio Utama
+          </span>
+
+          <div class="ca-doodle-box relative mt-6 border-2 border-[var(--ca-yellow)] p-6 sm:p-10">
+            <div class="lg:pr-56">
+              <p class="ca-hand text-2xl font-medium leading-snug text-[var(--ca-ink)] sm:text-4xl">
+                <span>
+                  Fresh graduate Sarjana Komputer (IPK 3.88) yang menggabungkan kemampuan Full-Stack, AI Engineering, dan analisis kebutuhan bisnis (1+ tahun pengalaman Digital Marketing).                
+                </span>
+              </p>
+
+              <div class="mt-8 flex max-w-2xl flex-col gap-4">
+                <p class="text-base leading-relaxed text-[var(--ca-ink)]/80">
+                  Saya Zul Arsyl, lulusan Teknik Informatika (ITB Widya Gama Lumajang) dengan pengalaman lebih dari satu tahun bekerja di industri teknologi (PT PYRAMIDSOFT INDONESIA GROUP). Memiliki spesialisasi di software development, data science, machine learning, dan UI/UX design.
+                </p>
+                <p class="text-base leading-relaxed text-[var(--ca-ink)]/80">
+                  Selama berkarir, saya terbiasa menjembatani kebutuhan bisnis dan implementasi teknis: mulai dari mendesain antarmuka di Figma, membangun aplikasi web dan mobile (Android), menyusun manual book, hingga mengolah data dan menerapkan model machine learning (YOLO).
+                </p>
+              </div>
+
+              <!-- Callout Note with Tape -->
+              <div class="relative mt-8 max-w-xl -rotate-1 bg-[var(--ca-yellow-soft)] p-5 text-sm leading-relaxed text-[var(--ca-ink)] shadow-[3px_5px_14px_rgba(17,18,18,0.18)] sm:text-base">
+                <span aria-hidden="true" class="absolute -left-4 -top-2 z-10 h-5 w-16 -rotate-[38deg] bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+                PT PYRAMIDSOFT INDONESIA GROUP · Lumajang, Jawa Timur: Memimpin produksi konten video, digital marketing, strategi media sosial, serta mendukung kebutuhan teknis internal (pengembangan antarmuka & aplikasi mobile Android).
+              </div>
+
+              <!-- <div class="mt-8 max-w-md -rotate-2 bg-[var(--ca-yellow-soft)] p-4 text-sm leading-relaxed text-[var(--ca-ink)] shadow-[2px_3px_10px_rgba(17,18,18,0.14)] sm:ml-16 sm:text-base">
+                Saat tidak sedang coding atau melatih model AI, saya biasanya mengeksplorasi tren teknologi baru, membaca dokumentasi, atau menikmati kopi cold brew.
+              </div> -->
+            </div>
+
+            <!-- Taped Polaroid & Name Pill -->
+            <div class="mt-10 flex items-end justify-center gap-4 lg:absolute lg:right-0 lg:top-1 lg:mt-0 lg:block">
+              <div class="rotate-6">
+                <figure class="polaroid relative inline-block w-36 lg:w-44">
+                  <span aria-hidden="true" class="absolute -left-4 -top-2 z-10 h-5 w-16 -rotate-[38deg] bg-[var(--ca-cyan)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+                  <span aria-hidden="true" class="absolute -right-4 -top-2 z-10 h-5 w-16 rotate-[38deg] bg-[var(--ca-yellow-soft)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+                  <div class="aspect-[4/5] w-full overflow-hidden bg-slate-100">
+                    <img src="./assets/core.png" alt="Zul Arsyl" loading="lazy" class="h-full w-full object-cover" />
+                  </div>
+                  <figcaption class="ca-hand mt-1 text-center text-lg leading-tight text-[var(--ca-ink)]/70">
+                    2026
+                  </figcaption>
+                </figure>
+              </div>
+
+              <span class="relative mt-4 inline-block lg:mt-5">
+                <span class="ca-mono inline-block rounded-full border-[3px] border-white px-4 py-1.5 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] shadow-[0_4px_10px_rgba(25,21,16,0.25)]" style="background-color:var(--ca-yellow)">
+                  ZUL
+                </span>
+                <svg viewBox="0 0 40 40" fill="none" stroke="var(--ca-ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="absolute -left-6 -top-5 h-8 w-8" aria-hidden="true">
+                  <path d="M34 33 C 25 24, 15 21, 9 9"></path>
+                  <path d="M8 21 L 7 7 L 21 11"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: STORY & PRINCIPLES -->
+        <section id="story" class="mt-16 scroll-mt-28 sm:mt-24">
+          <span
+            class="ca-mono inline-block rotate-2 bg-[var(--ca-magenta)] px-4 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] [filter:drop-shadow(2px_3px_3px_rgba(17,18,18,0.18))] sm:text-base clip-stamp-2 text-white"
+          >
+            Cerita & Prinsip
+          </span>
+
+          <div class="ca-doodle-box relative mt-6 border-2 border-[var(--ca-magenta)] p-6 sm:p-10">
+            <div class="flex flex-col gap-12 lg:gap-16">
+              <!-- Principle 1 -->
+              <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
+                <div class="relative w-full max-w-xl p-6 pt-7 shadow-[2px_6px_18px_rgba(17,18,18,0.22)] sm:p-8 sm:pt-9 -rotate-1" style="background-color:var(--ca-cyan)">
+                  <span aria-hidden="true" class="absolute z-10 bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)] -left-5 -top-2 h-5 w-16 -rotate-[40deg]"></span>
+                  <span aria-hidden="true" class="absolute z-10 bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)] -right-4 bottom-8 h-5 w-14 rotate-[62deg]"></span>
+                  <h3 class="text-2xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-3xl">Mulai dari 'Kenapa'</h3>
+                  <p class="mt-3 text-sm leading-relaxed text-[var(--ca-ink)]/85 sm:text-base">
+                    Sebelum menulis baris kode pertama atau membuka editor, pahami dulu masalah intinya: siapa penggunanya, apa kebutuhan utamanya, dan apa solusi paling sederhana. Pertanyaan yang tajam menghasilkan solusi yang tepat sasaran.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 self-center">
+                  <svg viewBox="0 0 48 24" fill="none" stroke="var(--ca-ink)" stroke-width="1.8" stroke-linecap="round" class="h-6 w-12 shrink-0" aria-hidden="true">
+                    <path d="M2 6c12 10 26 14 40 12"></path>
+                    <path d="M36 14l6 4-7 3"></path>
+                  </svg>
+                  <p class="ca-hand whitespace-nowrap text-2xl text-[var(--ca-ink)] sm:text-3xl">pahami sebelum coding.</p>
+                </div>
+              </div>
+
+              <!-- Principle 2 -->
+              <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
+                <div class="relative w-full max-w-xl p-6 pt-7 shadow-[2px_6px_18px_rgba(17,18,18,0.22)] sm:p-8 sm:pt-9 rotate-1" style="background-color:var(--ca-yellow-soft)">
+                  <span aria-hidden="true" class="absolute z-10 bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)] -right-5 -top-2 h-5 w-16 rotate-[40deg]"></span>
+                  <span aria-hidden="true" class="absolute z-10 bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)] -left-4 bottom-10 h-5 w-14 -rotate-[62deg]"></span>
+                  <h3 class="text-2xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-3xl">Rancang untuk Kasus Tak Terduga</h3>
+                  <p class="mt-3 text-sm leading-relaxed text-[var(--ca-ink)]/85 sm:text-base">
+                    Aplikasi diuji ketika koneksi lambat, data kosong, atau input tidak terduga. Penanganan error yang ramah dan sistem yang tangguh adalah tanda engineering yang berbobot.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 self-center">
+                  <svg viewBox="0 0 48 24" fill="none" stroke="var(--ca-ink)" stroke-width="1.8" stroke-linecap="round" class="h-6 w-12 shrink-0" aria-hidden="true">
+                    <path d="M2 6c12 10 26 14 40 12"></path>
+                    <path d="M36 14l6 4-7 3"></path>
+                  </svg>
+                  <p class="ca-hand whitespace-nowrap text-2xl text-[var(--ca-ink)] sm:text-3xl">perhatikan setiap detail!</p>
+                </div>
+              </div>
+
+              <!-- Principle 3 -->
+              <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
+                <div class="relative w-full max-w-xl p-6 pt-7 shadow-[2px_6px_18px_rgba(17,18,18,0.22)] sm:p-8 sm:pt-9 -rotate-2" style="background-color:var(--ca-mint)">
+                  <span aria-hidden="true" class="absolute z-10 bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)] -left-4 top-1/2 h-5 w-14 -rotate-[78deg]"></span>
+                  <span aria-hidden="true" class="absolute z-10 bg-white/60 shadow-[0_1px_3px_rgba(17,18,18,0.15)] -right-5 -top-2 h-5 w-16 rotate-[36deg]"></span>
+                  <h3 class="text-2xl font-semibold tracking-tight text-[var(--ca-ink)] sm:text-3xl">Tumbuh Bersama Tim</h3>
+                  <p class="mt-3 text-sm leading-relaxed text-[var(--ca-ink)]/85 sm:text-base">
+                    Kolaborasi tim yang kuat menghasilkan produk yang jauh lebih baik daripada bekerja sendiri. Feedback cepat, diskusi terbuka, dan saling mendukung adalah kunci sukses.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 self-center">
+                  <svg viewBox="0 0 48 24" fill="none" stroke="var(--ca-ink)" stroke-width="1.8" stroke-linecap="round" class="h-6 w-12 shrink-0" aria-hidden="true">
+                    <path d="M2 6c12 10 26 14 40 12"></path>
+                    <path d="M36 14l6 4-7 3"></path>
+                  </svg>
+                  <p class="ca-hand whitespace-nowrap text-2xl text-[var(--ca-ink)] sm:text-3xl">bersama, bukan sendiri.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: WORK & EDUCATION -->
+        <section id="work" class="mt-16 scroll-mt-28 sm:mt-24">
+          <span
+            class="ca-mono -rotate-2 inline-block bg-[var(--ca-blue)] px-4 py-2 text-sm font-bold uppercase tracking-widest text-white [filter:drop-shadow(2px_3px_3px_rgba(17,18,18,0.18))] sm:text-base clip-stamp-3"
+          >
+            Pengalaman & Pendidikan
+          </span>
+
+          <div class="ca-doodle-box mt-6 flex flex-col gap-7 border-2 border-[var(--ca-blue)] p-6 sm:p-10">
+            <!-- Timeline Item 1: PMB ITB Widya Gama -->
+            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 border-b border-[var(--ca-ink)]/10 pb-6">
+              <div class="flex items-baseline gap-3 sm:gap-4">
+                <span class="h-3 w-3 shrink-0 translate-y-0.5 bg-[var(--ca-blue)]" aria-hidden="true"></span>
+                <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-4">
+                  <p class="text-lg font-semibold text-[var(--ca-ink)]">Fullstack Developer — Sistem PMB</p>
+                  <p class="text-sm text-[var(--ca-ink)]/70">ITB Widya Gama Lumajang (Freelance)</p>
+                </div>
+              </div>
+              <span class="ca-mono ml-6 inline-block bg-[var(--ca-blue)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white sm:ml-0">
+                Sep 2026 – Sekarang
+              </span>
+            </div>
+
+            <!-- Timeline Item 2: POS Kasir Pressent Studio -->
+            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 border-b border-[var(--ca-ink)]/10 pb-6">
+              <div class="flex items-baseline gap-3 sm:gap-4">
+                <span class="h-3 w-3 shrink-0 translate-y-0.5 bg-[var(--ca-blue)]" aria-hidden="true"></span>
+                <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-4">
+                  <p class="text-lg font-semibold text-[var(--ca-ink)]">Fullstack Developer — Sistem Kasir Bioskop</p>
+                  <p class="text-sm text-[var(--ca-ink)]/70">Pressent Studio Pekanbaru (Freelance)</p>
+                </div>
+              </div>
+              <span class="ca-mono ml-6 inline-block bg-[var(--ca-yellow)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-[var(--ca-ink)] sm:ml-0">
+                Okt 2026
+              </span>
+            </div>
+
+            <!-- Timeline Item 3: PT Pyramidsoft -->
+            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 border-b border-[var(--ca-ink)]/10 pb-6">
+              <div class="flex items-baseline gap-3 sm:gap-4">
+                <span class="h-3 w-3 shrink-0 translate-y-0.5 bg-[var(--ca-blue)]" aria-hidden="true"></span>
+                <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-4">
+                  <p class="text-lg font-semibold text-[var(--ca-ink)]">Digital Marketing & UI/UX Designer</p>
+                  <p class="text-sm text-[var(--ca-ink)]/70">PT. Pyramidsoft Indonesia Group (Penuh Waktu)</p>
+                </div>
+              </div>
+              <span class="ca-mono ml-6 inline-block bg-[var(--ca-magenta)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white sm:ml-0">
+                Okt 2024 – Jan 2026
+              </span>
+            </div>
+
+            <!-- Education 1: ITB Widya Gama -->
+            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6 border-b border-[var(--ca-ink)]/10 pb-6">
+              <div class="flex items-baseline gap-3 sm:gap-4">
+                <span class="h-3 w-3 shrink-0 translate-y-0.5 bg-[var(--ca-green)]" aria-hidden="true"></span>
+                <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-4">
+                  <p class="text-lg font-semibold text-[var(--ca-ink)]">S1 Informatika · IPK 3.88/4.00</p>
+                  <p class="text-sm text-[var(--ca-ink)]/70">Institut Teknologi dan Bisnis Widya Gama Lumajang</p>
+                </div>
+              </div>
+              <span class="ca-mono ml-6 inline-block bg-[var(--ca-green)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white sm:ml-0">
+                Sep 2022 – Agu 2026
+              </span>
+            </div>
+
+            <!-- Education 2: SMAN 1 Tapung Hulu -->
+            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+              <div class="flex items-baseline gap-3 sm:gap-4">
+                <span class="h-3 w-3 shrink-0 translate-y-0.5 bg-[var(--ca-green)]" aria-hidden="true"></span>
+                <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-4">
+                  <p class="text-lg font-semibold text-[var(--ca-ink)]">Pendidikan Menengah Atas</p>
+                  <p class="text-sm text-[var(--ca-ink)]/70">SMAN 1 Tapung Hulu</p>
+                </div>
+              </div>
+              <span class="ca-mono ml-6 inline-block bg-[var(--ca-green)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white sm:ml-0">
+                Alumni
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ca-grid relative mt-auto border-t border-[var(--ca-ink)]/10">
+      <div class="px-4 py-8 sm:px-8 lg:px-20 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span class="ca-display text-2xl text-[var(--ca-ink)] uppercase">Zul Arsyl</span>
+        <span class="text-xs text-[var(--ca-ink)]/70">© 2026 Zul Arsyl · Hak cipta dilindungi</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

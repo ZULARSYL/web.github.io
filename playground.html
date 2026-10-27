@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="id" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Playground · Zul Arsyl</title>
+    <meta name="description" content="Kanvas scrapbook playground berisi sertifikat keahlian, eksperimen kode, dan dokumentasi karya Zul Arsyl." />
+    <link rel="icon" type="image/png" href="./assets/core.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700;800;900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-full flex flex-col t-creative-artsy bg-[var(--ca-surface)] text-[var(--ca-ink)] antialiased">
+    <div aria-hidden="true" class="ca-grain pointer-events-none fixed inset-0 z-[1] mix-blend-multiply"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-[var(--ca-surface)]/95 backdrop-blur-sm">
+      <div class="relative flex items-stretch justify-between border-b border-[var(--ca-ink)]/10 pl-4 pr-3 sm:pl-5">
+        <div class="flex items-stretch gap-2">
+          <a aria-label="Zul Arsyl" class="flex items-center pr-2" href="index.html">
+            <svg viewBox="0 0 24 24" class="h-7 w-7 overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))]" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="var(--ca-magenta)" stroke="#ffffff" stroke-width="2.5" paint-order="stroke"></circle>
+              <circle cx="8.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <circle cx="15.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <path d="M8 14Q12 18 16 14" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </a>
+          <nav class="hidden items-stretch md:flex">
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="index.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.85.72-5.1 4.62 1.44 6.7L12 17.6l-6.09 3.7 1.44-6.7-5.1-4.62 6.85-.72z"></path>
+              </svg>
+              Beranda
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="about.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 3a3.6 3.6 0 100 7.2A3.6 3.6 0 0012 3zM4.8 20a7.2 7.2 0 0114.4 0z"></path>
+              </svg>
+              Tentang
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="case-studies.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"></path>
+              </svg>
+              Studi Kasus
+            </a>
+            <a aria-current="page" class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors bg-[var(--ca-yellow)]" href="playground.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l10 10-10 10L2 12z"></path>
+              </svg>
+              Playground
+            </a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-2 py-2">
+          <a href="https://wa.me/625737662724" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-[var(--ca-ink)] shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-yellow)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.9 11.9 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.07 21.88h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.91 7.02c0 5.48-4.46 9.92-9.89 9.92zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.11 3.23 5.12 4.53.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path></svg>
+          </a>
+          <a href="https://github.com/ZULARSYL" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-white shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-magenta)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+          </a>
+          <a class="ca-mono hidden items-center gap-2.5 border-2 border-[var(--ca-ink)] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-ink)] hover:text-white sm:inline-flex" href="contact.html">
+            <svg viewBox="0 0 24 22" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 21C5 16 1 12 1 7.5 1 4 3.6 1.5 6.8 1.5c2 0 3.9 1 5.2 2.6 1.3-1.6 3.2-2.6 5.2-2.6C20.4 1.5 23 4 23 7.5 23 12 19 16 12 21Z"></path></svg>
+            Kontak
+          </a>
+          <button id="menu-toggle" aria-label="Toggle menu" class="flex h-11 w-11 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] md:hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-5 w-5 text-[var(--ca-ink)]" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-b-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] p-4 md:hidden">
+        <nav class="flex flex-col gap-2">
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="index.html">★ Beranda</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="about.html">☺ Tentang</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="case-studies.html">⊞ Studi Kasus</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 bg-[var(--ca-yellow)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)]" href="playground.html">◇ Playground</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 border-2 border-[var(--ca-ink)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-ink)] hover:text-white" href="contact.html">♥ Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Canvas Viewport -->
+    <main class="ca-grid relative h-[calc(100vh-5rem)] overflow-hidden">
+      <!-- Floating Title Header -->
+      <div class="pointer-events-none absolute left-1/2 top-6 z-40 flex -translate-x-1/2 flex-col items-center text-center">
+        <p class="ca-hand text-2xl text-[var(--ca-ink)] sm:text-3xl">ruang eksperimen & sertifikat</p>
+        <span class="mt-2 block">
+          <span class="ca-display text-5xl leading-[0.92] tracking-tight text-[var(--ca-ink)] sm:text-7xl block">
+            GALERI KARYA
+          </span>
+        </span>
+        <p class="ca-mono mt-1 text-xs uppercase tracking-widest text-[var(--ca-ink)]/70">
+          (klik untuk melihat · seret kartu sesukamu!)
+        </p>
+      </div>
+
+      <!-- Interactive Drag & Zoom Canvas -->
+      <div class="absolute inset-0">
+        <div id="playgroundCanvas" class="h-full w-full transition-transform duration-200 ease-out" style="transform: scale(1); transform-origin: 50% 45%;">
+          <!-- Card 1: Dasar Javascript -->
+          <div class="draggable-card absolute select-none w-44 sm:w-64 lg:w-80 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:4%;top:8%;">
+            <div class="relative -rotate-3 w-full" onclick="openModal('./assets/sertifikat/dasar javascript.jpg', 'Sertifikat Dasar JavaScript', 'Dicoding Academy')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/3] w-full bg-slate-100">
+                  <img src="./assets/sertifikat/dasar javascript.jpg" alt="Dasar JavaScript" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-yellow-soft)">
+                dasar javascript
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2: Cloud & Gen AI -->
+          <div class="draggable-card absolute select-none w-36 sm:w-56 lg:w-72 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:54%;top:5%;">
+            <div class="relative rotate-2 w-full" onclick="openModal('./assets/sertifikat/claud dan gen ai.jpg', 'Sertifikat Cloud & Gen AI', 'Cloud and Generative Artificial Intelligence')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/3] w-full bg-slate-100">
+                  <img src="./assets/sertifikat/claud dan gen ai.jpg" alt="Cloud & Gen AI" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-3 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-purple)">
+                cloud & gen ai
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: Data Science -->
+          <div class="draggable-card absolute select-none w-48 sm:w-64 lg:w-80 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:28%;top:26%;">
+            <div class="relative rotate-3 w-full" onclick="openModal('./assets/sertifikat/data science.jpg', 'Sertifikat Data Science', 'Pelatihan & Sertifikasi Data Science')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/3] w-full bg-slate-100">
+                  <img src="./assets/sertifikat/data science.jpg" alt="Data Science" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-cyan)">
+                data science
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 4: Laravel 9 -->
+          <div class="draggable-card absolute select-none w-36 sm:w-52 lg:w-64 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:76%;top:24%;">
+            <div class="relative -rotate-2 w-full" onclick="openModal('./assets/sertifikat/laravel-9.jpg', 'Sertifikat Laravel 9', 'Web Backend Framework')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/3] w-full bg-slate-100">
+                  <img src="./assets/sertifikat/laravel-9.jpg" alt="Laravel 9" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-yellow-soft)">
+                laravel 9
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 5: ML YOLO -->
+          <div class="draggable-card absolute select-none w-40 sm:w-60 lg:w-72 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:6%;top:52%;">
+            <div class="relative rotate-2 w-full" onclick="openModal('./assets/sertifikat/machine learning yolo.jpg', 'Machine Learning YOLO', 'Computer Vision & Object Detection')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/3] w-full bg-slate-100">
+                  <img src="./assets/sertifikat/machine learning yolo.jpg" alt="Machine Learning YOLO" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-cyan)">
+                yolo ml
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 6: Manajemen Proyek -->
+          <div class="draggable-card absolute select-none w-44 sm:w-64 lg:w-80 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:52%;top:54%;">
+            <div class="relative -rotate-3 w-full" onclick="openModal('./assets/sertifikat/manajemen proyek.jpg', 'Sertifikat Manajemen Proyek', 'Project Management & Collaboration')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/3] w-full bg-slate-100">
+                  <img src="./assets/sertifikat/manajemen proyek.jpg" alt="Manajemen Proyek" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-purple)">
+                manajemen proyek
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 7: Profile Polaroid -->
+          <div class="draggable-card absolute select-none w-36 sm:w-48 lg:w-56 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:80%;top:58%;">
+            <div class="relative rotate-3 w-full" onclick="openModal('./assets/core.png', 'Zul Arsyl', 'Foto Profil')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/5] w-full bg-slate-100">
+                  <img src="./assets/core.png" alt="Zul" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-yellow-soft)">
+                salam kenal!
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 8: Workspace Polaroid -->
+          <div class="draggable-card absolute select-none w-40 sm:w-56 lg:w-64 cursor-grab active:cursor-grabbing [&_img]:pointer-events-none" style="left:26%;top:66%;">
+            <div class="relative -rotate-2 w-full" onclick="openModal('./assets/tentang.png', 'Ruang Kerja', 'Setup Meja Kerja & Coding')">
+              <div class="overflow-hidden bg-[var(--ca-surface)] shadow-[0_10px_28px_rgba(17,18,18,0.22)] border-2 border-white">
+                <div class="relative overflow-hidden aspect-[4/5] w-full bg-slate-100">
+                  <img src="./assets/tentang.png" alt="Workspace" loading="lazy" class="h-full w-full object-cover" />
+                </div>
+              </div>
+              <span class="ca-hand inline-block px-3 py-1.5 leading-snug text-[var(--ca-ink)] shadow-[2px_3px_8px_rgba(17,18,18,0.18)] text-xl sm:text-2xl -rotate-6 absolute -left-3 -top-3 max-w-[90%]" style="background-color:var(--ca-mint)">
+                ruang kerja & kode
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zoom In & Out Floating Controls -->
+      <div class="absolute bottom-6 right-6 z-40 flex flex-col gap-2">
+        <button id="zoomIn" aria-label="Perbesar tampilan" class="ca-mono flex h-11 w-11 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] text-xl font-bold text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-blue)] hover:text-white shadow-[2px_2px_0_var(--ca-ink)]">
+          +
+        </button>
+        <button id="zoomOut" aria-label="Perkecil tampilan" class="ca-mono flex h-11 w-11 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] text-xl font-bold text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-blue)] hover:text-white shadow-[2px_2px_0_var(--ca-ink)]">
+          −
+        </button>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="artsyModal" class="artsy-modal" aria-hidden="true">
+      <div class="artsy-modal-box ca-doodle-box">
+        <button id="artsyModalClose" class="absolute right-4 top-4 ca-mono flex h-10 w-10 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-yellow)] text-xl font-bold hover:bg-[var(--ca-magenta)] hover:text-white" aria-label="Tutup jendela pratinjau">
+          ×
+        </button>
+        <h3 id="artsyModalTitle" class="text-2xl sm:text-3xl font-bold text-[var(--ca-ink)] pr-12">Pratinjau</h3>
+        <p id="artsyModalDesc" class="mt-2 text-sm sm:text-base text-[var(--ca-ink)]/75"></p>
+        <div class="mt-5 overflow-hidden border-2 border-[var(--ca-ink)] bg-black/5 flex items-center justify-center max-h-[65vh]">
+          <img id="artsyModalImg" src="" alt="Pratinjau modal" class="max-h-[65vh] w-auto object-contain" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

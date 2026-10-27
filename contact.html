@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="id" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak · Zul Arsyl</title>
+    <meta name="description" content="Hubungi Zul Arsyl - Terbuka untuk proyek pengembangan perangkat lunak, kolaborasi rekayasa teknologi, dan peluang karir." />
+    <link rel="icon" type="image/png" href="./assets/core.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700;800;900&family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-full flex flex-col t-creative-artsy bg-[var(--ca-surface)] text-[var(--ca-ink)] antialiased">
+    <div aria-hidden="true" class="ca-grain pointer-events-none fixed inset-0 z-[1] mix-blend-multiply"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-[var(--ca-surface)]/95 backdrop-blur-sm">
+      <div class="relative flex items-stretch justify-between border-b border-[var(--ca-ink)]/10 pl-4 pr-3 sm:pl-5">
+        <div class="flex items-stretch gap-2">
+          <a aria-label="Zul Arsyl" class="flex items-center pr-2" href="index.html">
+            <svg viewBox="0 0 24 24" class="h-7 w-7 overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))]" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="var(--ca-magenta)" stroke="#ffffff" stroke-width="2.5" paint-order="stroke"></circle>
+              <circle cx="8.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <circle cx="15.5" cy="10.5" r="1.35" fill="#ffffff"></circle>
+              <path d="M8 14Q12 18 16 14" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </a>
+          <nav class="hidden items-stretch md:flex">
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="index.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l2.9 6.26 6.85.72-5.1 4.62 1.44 6.7L12 17.6l-6.09 3.7 1.44-6.7-5.1-4.62 6.85-.72z"></path>
+              </svg>
+              Beranda
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="about.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 3a3.6 3.6 0 100 7.2A3.6 3.6 0 0012 3zM4.8 20a7.2 7.2 0 0114.4 0z"></path>
+              </svg>
+              Tentang
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="case-studies.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"></path>
+              </svg>
+              Studi Kasus
+            </a>
+            <a class="ca-mono flex items-center justify-center gap-2.5 px-5 py-4 text-sm font-bold uppercase leading-none tracking-widest text-[var(--ca-ink)] transition-colors hover:bg-[var(--ca-chrome)]" href="playground.html">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" class="overflow-visible [filter:drop-shadow(1px_1.5px_0_rgba(25,21,16,0.28))] h-5 w-5 shrink-0" aria-hidden="true">
+                <path d="M12 2l10 10-10 10L2 12z"></path>
+              </svg>
+              Playground
+            </a>
+          </nav>
+        </div>
+
+        <div class="flex items-center gap-2 py-2">
+          <a href="https://wa.me/625737662724" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-[var(--ca-ink)] shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-yellow)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.9 11.9 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.07 21.88h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.91 7.02c0 5.48-4.46 9.92-9.89 9.92zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.11 3.23 5.12 4.53.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path></svg>
+          </a>
+          <a href="https://github.com/ZULARSYL" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-white shadow-[1.5px_1.5px_0_rgba(25,21,16,0.25)] transition-transform duration-200 hover:-translate-y-0.5" style="background-color:var(--ca-magenta)">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+          </a>
+          <a class="ca-mono hidden items-center gap-2.5 border-2 border-[var(--ca-ink)] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors bg-[var(--ca-yellow)] sm:inline-flex" href="contact.html">
+            <svg viewBox="0 0 24 22" fill="currentColor" class="h-4 w-4" aria-hidden="true"><path d="M12 21C5 16 1 12 1 7.5 1 4 3.6 1.5 6.8 1.5c2 0 3.9 1 5.2 2.6 1.3-1.6 3.2-2.6 5.2-2.6C20.4 1.5 23 4 23 7.5 23 12 19 16 12 21Z"></path></svg>
+            Kontak
+          </a>
+          <button id="menu-toggle" aria-label="Toggle menu" class="flex h-11 w-11 items-center justify-center border-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] md:hidden">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="h-5 w-5 text-[var(--ca-ink)]" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-b-2 border-[var(--ca-ink)] bg-[var(--ca-surface)] p-4 md:hidden">
+        <nav class="flex flex-col gap-2">
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="index.html">★ Beranda</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="about.html">☺ Tentang</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="case-studies.html">⊞ Studi Kasus</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)] hover:bg-[var(--ca-chrome)]" href="playground.html">◇ Playground</a>
+          <a class="mobile-nav-link ca-mono flex items-center gap-3 bg-[var(--ca-yellow)] border-2 border-[var(--ca-ink)] px-4 py-3 text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)]" href="contact.html">♥ Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="ca-grid relative flex flex-1 flex-col px-4 py-10 sm:py-16">
+      <!-- Background Pinned Polaroids (Desktop) -->
+      <div class="pointer-events-none absolute inset-0 hidden lg:block">
+        <div class="absolute left-[9%] top-[14%] w-60 xl:w-72 -rotate-12">
+          <figure class="polaroid relative inline-block w-full pointer-events-auto">
+            <span aria-hidden="true" class="absolute -left-4 -top-2 z-10 h-5 w-16 -rotate-[38deg] bg-[var(--ca-cyan)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+            <span aria-hidden="true" class="absolute -right-4 -top-2 z-10 h-5 w-16 rotate-[38deg] bg-[var(--ca-yellow-soft)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+            <div class="aspect-[4/5] w-full overflow-hidden bg-slate-100">
+              <img src="./assets/core.png" alt="Zul" loading="lazy" class="h-full w-full object-cover" />
+            </div>
+            <figcaption class="ca-hand mt-1 text-center text-lg leading-tight text-[var(--ca-ink)]/70">
+              mari ngobrol
+            </figcaption>
+          </figure>
+        </div>
+        <div class="absolute right-[9%] top-[18%] w-60 xl:w-72 rotate-12">
+          <figure class="polaroid relative inline-block w-full pointer-events-auto">
+            <span aria-hidden="true" class="absolute -left-4 -top-2 z-10 h-5 w-16 -rotate-[38deg] bg-[var(--ca-cyan)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+            <span aria-hidden="true" class="absolute -right-4 -top-2 z-10 h-5 w-16 rotate-[38deg] bg-[var(--ca-yellow-soft)]/70 shadow-[0_1px_3px_rgba(17,18,18,0.15)]"></span>
+            <div class="aspect-[4/5] w-full overflow-hidden bg-slate-100">
+              <img src="./assets/tentang.png" alt="Workspace" loading="lazy" class="h-full w-full object-cover" />
+            </div>
+            <figcaption class="ca-hand mt-1 text-center text-lg leading-tight text-[var(--ca-ink)]/70">
+              di meja kerja
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Center Contact Card & Scrapbook Form -->
+      <div class="relative mx-auto my-auto flex w-full max-w-2xl flex-col items-center">
+        <!-- Label -->
+        <div class="flex flex-col items-center">
+          <p class="ca-hand text-2xl text-[var(--ca-ink)] sm:text-3xl">sapa saya</p>
+          <svg viewBox="0 0 64 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" class="mt-0.5 h-3 w-20" aria-hidden="true">
+            <path d="M3 4c18-3 40-3 58 0"></path>
+            <path d="M9 9c14-2.5 32-2.5 46 0"></path>
+          </svg>
+        </div>
+
+        <!-- Giant CONTACT Box with Blue Corners -->
+        <div class="mt-3 -rotate-2">
+          <div class="relative border-[3px] border-[var(--ca-ink)] px-6 py-1.5 sm:px-10 bg-[var(--ca-surface)]">
+            <span class="absolute -left-2 -top-2 h-4 w-4 bg-[var(--ca-blue)]"></span>
+            <span class="absolute -right-2 -top-2 h-4 w-4 bg-[var(--ca-blue)]"></span>
+            <span class="absolute -bottom-2 -left-2 h-4 w-4 bg-[var(--ca-blue)]"></span>
+            <span class="absolute -bottom-2 -right-2 h-4 w-4 bg-[var(--ca-blue)]"></span>
+            <span class="ca-display text-6xl uppercase leading-none tracking-tight text-[var(--ca-ink)] sm:text-8xl lg:text-9xl block">
+              HUBUNGI SAYA
+            </span>
+          </div>
+        </div>
+
+        <!-- Interactive 2-Step Scrapbook Form -->
+        <div class="mt-8 w-full max-w-md">
+          <div class="bg-[var(--ca-yellow-soft)] p-6 shadow-[4px_6px_18px_rgba(17,18,18,0.18)] border-2 border-[var(--ca-ink)]">
+            <form id="ca-contact-form">
+              <p class="ca-mono text-sm font-bold uppercase tracking-widest text-[var(--ca-ink)]">
+                Punya ide proyek, tantangan teknis, atau sekadar ingin menyapa? Kirimkan pesan sekarang.
+              </p>
+
+              <!-- STEP 1: MESSAGE -->
+              <div id="contact-step-1">
+                <textarea
+                  rows="4"
+                  id="ca-contact-message"
+                  name="message"
+                  class="mt-4 block w-full resize-none border-0 bg-transparent p-0 text-base text-[var(--ca-ink)] placeholder:text-[var(--ca-ink)]/65 focus:outline-none focus:ring-0"
+                  placeholder="Ceritakan ide proyek atau hal yang ingin kamu diskusikan..."
+                  required
+                ></textarea>
+                <div class="mt-4 border-t border-[var(--ca-ink)]/20 pt-4 flex justify-between items-center">
+                  <span class="ca-mono text-xs text-[var(--ca-ink)]/70 uppercase font-bold">Langkah 1 dari 2</span>
+                  <button
+                    type="button"
+                    id="contact-btn-next"
+                    class="ca-mono inline-flex bg-[var(--ca-ink)] px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-[var(--ca-blue)] hover:text-white"
+                  >
+                    Lanjut (1/2) →
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 2: NAME & EMAIL -->
+              <div id="contact-step-2" class="hidden">
+                <div class="mt-4 flex flex-col gap-4">
+                  <div>
+                    <label class="block ca-mono text-xs font-bold uppercase tracking-widest text-[var(--ca-ink)]/70" for="ca-contact-name">
+                      Nama
+                    </label>
+                    <input
+                      type="text"
+                      id="ca-contact-name"
+                      name="name"
+                      class="w-full border-b-2 border-[var(--ca-ink)]/25 bg-transparent py-1.5 text-base text-[var(--ca-ink)] placeholder:text-[var(--ca-ink)]/60 focus:border-[var(--ca-blue)] focus:outline-none"
+                      placeholder="Nama kamu"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="block ca-mono text-xs font-bold uppercase tracking-widest text-[var(--ca-ink)]/70" for="ca-contact-email">
+                      Email atau WhatsApp
+                    </label>
+                    <input
+                      type="text"
+                      id="ca-contact-email"
+                      name="email"
+                      class="w-full border-b-2 border-[var(--ca-ink)]/25 bg-transparent py-1.5 text-base text-[var(--ca-ink)] placeholder:text-[var(--ca-ink)]/60 focus:border-[var(--ca-blue)] focus:outline-none"
+                      placeholder="email@domain.com atau 08xxxxxxxxxx"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between border-t border-[var(--ca-ink)]/20 pt-4">
+                  <button
+                    type="button"
+                    id="contact-btn-back"
+                    class="ca-mono text-xs font-bold text-[var(--ca-ink)]/70 hover:text-[var(--ca-ink)] uppercase tracking-wider"
+                  >
+                    ← Kembali
+                  </button>
+                  <button
+                    type="submit"
+                    class="ca-mono inline-flex bg-[var(--ca-ink)] px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-[var(--ca-green)]"
+                  >
+                    Kirim ke WhatsApp (2/2) ↗
+                  </button>
+                </div>
+              </div>
+
+              <!-- SUCCESS MESSAGE -->
+              <div id="contact-success" class="hidden py-6 text-center">
+                <p class="ca-display text-2xl text-[var(--ca-ink)]">Pesan Siap Dikirim!</p>
+                <p class="mt-2 text-sm text-[var(--ca-ink)]/80">Membuka obrolan WhatsApp bersama Zul Arsyl...</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Arrow & Status -->
+        <div class="mt-8 flex items-center gap-3">
+          <svg viewBox="0 0 48 24" fill="none" stroke="var(--ca-ink)" stroke-width="1.8" stroke-linecap="round" class="h-6 w-12" aria-hidden="true">
+            <path d="M2 6c12 10 26 14 40 12"></path>
+            <path d="M36 14l6 4-7 3"></path>
+          </svg>
+          <p class="ca-hand text-2xl text-[var(--ca-ink)] sm:text-3xl">Terbuka untuk kolaborasi & peluang baru</p>
+        </div>
+
+        <!-- Direct Email Link -->
+        <p class="mt-2 text-base font-bold">
+          <a href="mailto:idzularsylmadjid@gmail.com" class="ca-mono text-[var(--ca-blue)] underline-offset-4 hover:underline">
+            idzularsylmadjid@gmail.com
+          </a>
+        </p>
+
+        <!-- Social Pills Bar -->
+        <div class="mt-6 flex gap-4 rounded-2xl bg-white px-8 py-3 shadow-[0_12px_32px_rgba(17,18,18,0.12)] border border-[var(--ca-ink)]/10">
+          <a href="https://wa.me/625737662724" target="_blank" rel="noopener noreferrer" class="ca-mono flex flex-col items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:text-[var(--ca-blue)]">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.16 1.6 5.97L0 24l6.23-1.63a11.9 11.9 0 0 0 5.83 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-.12-6.22-3.52-8.43zM12.07 21.88h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.91 7.02c0 5.48-4.46 9.92-9.89 9.92zm5.44-7.43c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.11 3.23 5.12 4.53.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path></svg>
+            WhatsApp
+          </a>
+          <a href="https://github.com/ZULARSYL" target="_blank" rel="noopener noreferrer" class="ca-mono flex flex-col items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:text-[var(--ca-blue)]">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path></svg>
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/dzul_arsyl?igsh=MWduOGg5MW1uNDY3YQ==" target="_blank" rel="noopener noreferrer" class="ca-mono flex flex-col items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-widest text-[var(--ca-ink)] transition-colors hover:text-[var(--ca-blue)]">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ca-grid relative mt-auto border-t border-[var(--ca-ink)]/10">
+      <div class="px-4 py-8 sm:px-8 lg:px-20 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span class="ca-display text-2xl text-[var(--ca-ink)] uppercase">Zul Arsyl</span>
+        <span class="text-xs text-[var(--ca-ink)]/70">© 2026 Zul Arsyl · Hak cipta dilindungi</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
